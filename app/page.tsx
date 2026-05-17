@@ -98,7 +98,7 @@ export default function TuncPenPVC() {
 
           <div>
             <img
-              src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1200&auto=format&fit=crop"
+              src="logo.png"
               alt="Cam Balkon"
               className="rounded-[2rem] shadow-2xl object-cover h-[650px] w-full"
             />
