@@ -165,16 +165,16 @@ export default function TuncPenPVC() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              'galeri-1.jpg',
-              'galeri-2.jpg',
-              'galeri-3.jpg',
-              'galeri-4.jpg',
-              'galeri-5.jpg',
-              'galeri-6.jpg',
-              'galeri-7.jpg',
-              'galeri-8.jpg',
-              'galeri-9.jpg',
-              'galeri-10.jpg'
+              'galeri1.jpg',
+              'galeri2.webp',
+              'galeri3.webp',
+              'galeri4.webp',
+              'galeri5.webp',
+              'galeri6.jpg',
+              'galeri7.jfif',
+              'galeri8.jfif',
+              'galeri9.jfif',
+              'galeri10.jpg'
             ].map((img, index) => (
               <div key={index} className="overflow-hidden rounded-[2rem] bg-white shadow-sm hover:shadow-xl transition duration-300">
                 <img
