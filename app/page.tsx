@@ -211,7 +211,7 @@ export default function TuncPenPVC() {
             <p className="text-neutral-600 leading-relaxed text-lg mb-8">
               Tunç Pen PVC olarak Ankara / Mamak bölgesinde pimapen,
               sineklik ve cam balkon alanında profesyonel hizmet veriyoruz.
-              Modern çözümler ve müşteri memnuniyeti odaklı çalışma anlayışıyla
+              Modern çözümler and müşteri memnuniyeti odaklı çalışma anlayışıyla
               kaliteli işler teslim ediyoruz.
             </p>
 
@@ -255,4 +255,25 @@ export default function TuncPenPVC() {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="tel:+905439561711"
-              className="px-8 py
+              className="px-8 py-4 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition"
+            >
+              📞 Hemen Ara
+            </a>
+
+            <a
+              href="https://wa.me/905439561711"
+              target="_blank"
+              className="px-8 py-4 rounded-2xl bg-yellow-400 text-black font-semibold hover:scale-105 transition"
+            >
+              🟢 WhatsApp
+            </a>
+          </div>
+
+          <div className="mt-16 border-t border-neutral-700 pt-8 text-neutral-400 text-sm">
+            © 2026 Tunç Pen PVC • Tüm Hakları Saklıdır.
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
