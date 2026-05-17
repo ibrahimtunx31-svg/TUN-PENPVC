@@ -5,11 +5,11 @@ export default function Home() {
       <div className="top-bar">
         <div className="container top-bar-content">
           <div>
-            <span><i className="fas fa-phone"></i> +90 535 526 14 31</span>
-            <span><i className="fas fa-envelope"></i> info@acrsineklik.com.tr</span>
+            <span><i className="fas fa-phone"></i> +90 543 956 17 11</span>
+            <span><i className="fas fa-envelope"></i> tuncpenpvc@gmail.com</span>
           </div>
           <div>
-            <span><i className="fas fa-map-marker-alt"></i> Batıkent, Yenimahalle / Ankara</span>
+            <span><i className="fas fa-map-marker-alt"></i> Önder Mah. Akçakale 1 Sok. No: 43 Altındağ / Ankara</span>
           </div>
         </div>
       </div>
@@ -18,14 +18,13 @@ export default function Home() {
       <header>
         <div className="container header-content">
           <div className="logo">
-            <a href="#">ACR <span>SİNEKLİK</span></a>
+            <a href="#">TUNÇ PEN <span>PVC</span></a>
           </div>
           <nav>
             <ul>
               <li><a href="#" className="active">Ana Sayfa</a></li>
               <li><a href="#kurumsal">Kurumsal</a></li>
               <li><a href="#urunler">Sineklik Çeşitleri</a></li>
-              <li><a href="#hizmetler">Kedi Sineklikleri</a></li>
               <li><a href="#iletisim">İletişim</a></li>
             </ul>
           </nav>
@@ -50,7 +49,7 @@ export default function Home() {
         <div className="about-content">
           <div className="about-text">
             <h3>Evinizde Özgürlük Hissi, Dışarıya Karşı Akıllı Koruma</h3>
-            <p>Müşterilerimizin ihtiyaçlarını en ince detayına kadar analiz ederek, her mekana uygun, estetik ve fonksiyonel sineklikler tasarlamakta ve üretmekteyiz. Kaliteli malzeme kullanımı ve profesyonel işçiliğimiz ile uzun ömürlü kullanım garantisi sunuyoruz.</p>
+            <p>Tunç Pen PVC olarak müşterilerimizin ihtiyaçlarını en ince detayına kadar analiz ederek, her mekana uygun, estetik ve fonksiyonel sineklikler tasarlamakta ve üretmekteyiz. Kaliteli malzeme kullanımı ve profesyonel işçiliğimiz ile uzun ömürlü kullanım garantisi sunuyoruz.</p>
             <div className="features">
               <div className="feature-item"><i className="fas fa-check-circle"></i> %100 Dayanıklı Malzeme</div>
               <div className="feature-item"><i className="fas fa-check-circle"></i> Profesyonel Ölçü ve Montaj</div>
@@ -60,7 +59,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ürünler Bölümü */}
+      {/* Ürünler Bölümü (FOTOĞRAFLAR BURAYA EKLENDİ) */}
       <section id="urunler" className="products-section">
         <div className="container">
           <div className="section-title">
@@ -68,30 +67,47 @@ export default function Home() {
             <p>İhtiyacınıza uygun, yüksek kaliteli sineklik modellerimiz</p>
           </div>
           <div className="products-grid">
+            
+            {/* Ürün 1 */}
             <div className="product-card">
-              <div className="product-icon"><i className="fas fa-border-all"></i></div>
+              <div className="product-image-container">
+                <img src="/galeri1.jpg" alt="Pileli Kapı Sinekliği" className="product-img" />
+              </div>
               <h3>Pileli Kapı Sinekliği</h3>
               <p>Kullanımı kolay, yer kaplamayan modern akordeon sistem kapı sineklikleri.</p>
               <a href="#iletisim" className="product-btn">Bilgi Al</a>
             </div>
+
+            {/* Ürün 2 */}
             <div className="product-card">
-              <div className="product-icon"><i className="fas fa-window-maximize"></i></div>
+              <div className="product-image-container">
+                <img src="/galeri2.webp" alt="Menteşeli Pencere Sinekliği" className="product-img" />
+              </div>
               <h3>Menteşeli Pencere Sinekliği</h3>
               <p>Ekonomik, pratik, temizliği son derece kolay klasik sineklik modeli.</p>
               <a href="#iletisim" className="product-btn">Bilgi Al</a>
             </div>
+
+            {/* Ürün 3 */}
             <div className="product-card">
-              <div className="product-icon"><i className="fas fa-sliders-h"></i></div>
+              <div className="product-image-container">
+                <img src="/galeri3.webp" alt="Sürme (Kayar) Sineklik" className="product-img" />
+              </div>
               <h3>Sürme (Kayar) Sineklik</h3>
               <p>Geniş balkon kapıları ve sürgülü doğramalar için alttan taşıyıcılı estetik sistemler.</p>
               <a href="#iletisim" className="product-btn">Bilgi Al</a>
             </div>
+
+            {/* Ürün 4 */}
             <div className="product-card">
-              <div className="product-icon"><i className="fas fa-cat"></i></div>
+              <div className="product-image-container">
+                <img src="/galeri4.webp" alt="Özel Kedi Sinekliği" className="product-img" />
+              </div>
               <h3>Özel Kedi Sinekliği</h3>
               <p>Evcil hayvanlarınızın güvenliği için yırtılmaz çelik/alüminyum telli özel kilitli sistemler.</p>
               <a href="#iletisim" className="product-btn">Bilgi Al</a>
             </div>
+
           </div>
         </div>
       </section>
@@ -105,13 +121,13 @@ export default function Home() {
         <div className="contact-wrapper">
           <div className="contact-info">
             <h3>İletişim Bilgileri</h3>
-            <p><i className="fas fa-phone"></i> <strong>Telefon:</strong> +90 535 526 14 31</p>
-            <p><i className="fas fa-envelope"></i> <strong>E-Posta:</strong> info@acrsineklik.com.tr</p>
-            <p><i className="fas fa-map-marked-alt"></i> <strong>Adres:</strong> Turgut Özal Mah. Batıkent, Yenimahalle / Ankara</p>
+            <p><i className="fas fa-phone"></i> <strong>Telefon:</strong> +90 543 956 17 11</p>
+            <p><i className="fas fa-envelope"></i> <strong>E-Posta:</strong> tuncpenpvc@gmail.com</p>
+            <p><i className="fas fa-map-marked-alt"></i> <strong>Adres:</strong> Önder Mah. Akçakale 1 Sok. No: 43 Altındağ / Ankara</p>
             <div className="social-icons">
               <a href="#"><i className="fab fa-facebook"></i></a>
               <a href="#"><i className="fab fa-instagram"></i></a>
-              <a href="#"><i className="fab fa-whatsapp"></i></a>
+              <a href="https://wa.me/905439561711" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a>
             </div>
           </div>
           <div className="contact-form">
@@ -129,13 +145,13 @@ export default function Home() {
 
       {/* Alt Bilgi (Footer) */}
       <footer>
-        <p>&copy; 2026 ACR Sineklik Sistemleri. Tüm Hakları Saklıdır.</p>
+        <p>&copy; 2026 Tunç Pen PVC. Tüm Hakları Saklıdır.</p>
       </footer>
 
       {/* WhatsApp Sabit Butonu */}
-      <a href="https://wa.me/905355261431" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/905439561711" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-whatsapp"></i>
-      </a>
+    </a>
     </>
   );
 }
