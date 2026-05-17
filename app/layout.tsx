@@ -1,15 +1,30 @@
-export const metadata = {
-  title: "Tunç Pen PVC | Ankara Sineklik Cam Balkon Pimapen",
-  description: "Ankara Mamak bölgesinde pimapen, sineklik ve cam balkon hizmetleri.",
-  verification: {
-    google: "N5aB_9GocYdkb-uw1w8Ji3CH3kWEj7_HI1BRE5hjUns",
-  },
-};
+import './globals.css'
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export const metadata = {
+  title: 'Acar Sineklik Sistemleri',
+  description: 'Evinizin Konfor ve Güvenliği',
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="tr">
+      <head>
+        {/* İkonlar için FontAwesome bağlantısı */}
+        <link 
+          rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        />
+        {/* Google Fonts bağlantısı */}
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" 
+          rel="stylesheet" 
+        />
+      </head>
       <body>{children}</body>
     </html>
-  );
+  )
 }
