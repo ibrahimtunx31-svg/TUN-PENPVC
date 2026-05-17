@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Temel Sıfırlamalar ve Font Ayarları */
 * {
     margin: 0;
