@@ -96,11 +96,11 @@ export default function TuncPenPVC() {
             </div>
           </div>
 
-          <div>
+          <div className="flex justify-center items-center bg-white rounded-[2rem] shadow-2xl p-6 h-[650px]">
             <img
               src="logo.png"
-              alt="Cam Balkon"
-              className="rounded-[2rem] shadow-2xl object-cover h-[650px] w-full"
+              alt="Tunç Pen PVC Logo"
+              className="max-h-full max-w-full object-contain"
             />
           </div>
         </div>
@@ -122,26 +122,26 @@ export default function TuncPenPVC() {
             {[
               {
                 title: 'Pimapen Sistemleri',
-                text: 'Kaliteli PVC pencere ve kapı çözümleri.'
+                text: 'Ado Pen, Ado Win ve Erpen kalitesiyle uzun ömürlü kapı ve pencere çözümleri.'
               },
               {
                 title: 'Sineklik Sistemleri',
-                text: 'Pileli, sürgülü ve özel ölçü sineklikler.'
+                text: 'Pileli, sürgülü, menteşeli ve kapı tipi özel ölçü sineklik imalatı.'
               },
               {
                 title: 'Cam Balkon',
-                text: 'Şık ve dayanıklı cam balkon sistemleri.'
+                text: 'Katlanır ve sürme modellerle şık, ısı yalıtımlı cam balkon sistemleri.'
               },
               {
                 title: 'Tamir & Bakım',
-                text: 'Pimapen ayarı ve bakım hizmetleri.'
+                text: 'Kilit değişimi, conta yenileme, pimapen ayarı ve izolasyon hizmetleri.'
               }
             ].map((item, index) => (
               <div
                 key={index}
                 className="bg-neutral-100 rounded-[2rem] p-8 hover:-translate-y-2 transition duration-300"
               >
-                <div className="w-14 h-14 rounded-2xl bg-yellow-400 mb-6"></div>
+                <div className="w-14 h-14 rounded-2xl bg-yellow-400 mb-6 flex items-center justify-between px-4 font-bold text-xl">✓</div>
                 <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
                 <p className="text-neutral-600 leading-relaxed">{item.text}</p>
               </div>
@@ -160,20 +160,29 @@ export default function TuncPenPVC() {
             <h2 className="text-4xl lg:text-5xl font-black">
               Yaptığımız İşler
             </h2>
+            <p className="text-neutral-500 mt-2">Ado Pen, Ado Win, Erpen Profil ve Sineklik Uygulamalarımız</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop',
-              'https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop',
-              'https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop'
+              'galeri-1.jpg',
+              'galeri-2.jpg',
+              'galeri-3.jpg',
+              'galeri-4.jpg',
+              'galeri-5.jpg',
+              'galeri-6.jpg',
+              'galeri-7.jpg',
+              'galeri-8.jpg',
+              'galeri-9.jpg',
+              'galeri-10.jpg'
             ].map((img, index) => (
-              <img
-                key={index}
-                src={img}
-                alt="Proje"
-                className="rounded-[2rem] h-[350px] object-cover w-full hover:scale-[1.02] transition"
-              />
+              <div key={index} className="overflow-hidden rounded-[2rem] bg-white shadow-sm hover:shadow-xl transition duration-300">
+                <img
+                  src={img}
+                  alt={`Tunç Pen PVC Uygulama ${index + 1}`}
+                  className="h-[350px] object-cover w-full hover:scale-105 transition duration-500"
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -183,9 +192,9 @@ export default function TuncPenPVC() {
       <section id="hakkimizda" className="py-24">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
           <img
-            src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop"
-            alt="PVC"
-            className="rounded-[2rem] h-[600px] object-cover w-full"
+            src="galeri-1.jpg"
+            alt="Tunç Pen PVC Atölye Çalışması"
+            className="rounded-[2rem] h-[600px] object-cover w-full shadow-lg"
           />
 
           <div>
@@ -246,25 +255,4 @@ export default function TuncPenPVC() {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="tel:+905439561711"
-              className="px-8 py-4 rounded-2xl bg-white text-black font-semibold hover:scale-105 transition"
-            >
-              📞 Hemen Ara
-            </a>
-
-            <a
-              href="https://wa.me/905439561711"
-              target="_blank"
-              className="px-8 py-4 rounded-2xl bg-yellow-400 text-black font-semibold hover:scale-105 transition"
-            >
-              🟢 WhatsApp
-            </a>
-          </div>
-
-          <div className="mt-16 border-t border-neutral-700 pt-8 text-neutral-400 text-sm">
-            © 2026 Tunç Pen PVC • Tüm Hakları Saklıdır.
-          </div>
-        </div>
-      </section>
-    </div>
-  )
-}
+              className="px-8 py
